@@ -25,22 +25,6 @@
                 'on_error': console.error
             });
 
-
-        })();
-        (function($) {
-            // Show back to top button if distance from top > 0
-            $(window).scroll(function() {
-                var viewportTop = $(window).scrollTop() + $(window).height();
-
-                if ($(window).scrollTop() > 10) {
-                    $('#btn-top').addClass('d-block');
-                    $('#btn-top').removeClass('d-none');
-                } else {
-                    $('#btn-top').addClass('d-none');
-                    $('#btn-top').removeClass('d-block');
-                }
-            });
-        })(jQuery);
     </script>
 </body>
 
