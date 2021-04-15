@@ -79,6 +79,13 @@
                 'on_error': console.error
             });
 
+            new InstagramFeed({
+                'username': 'instagram',
+                'callback': function(data) {
+                    document.getElementById("jsonHere").innerHTML = JSON.stringify(data, null, 2);
+                }
+            });
+        })();
         (function($) {
             // Show back to top button if distance from top > 0
             $(window).scroll(function() {
